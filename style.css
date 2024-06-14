@@ -11,6 +11,8 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+
+  /* to active z-index */
   perspective: 10px;
 }
 
@@ -21,6 +23,8 @@
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
+
+  /* to overlap:- foreground and bg images */
   z-index: -1;
 }
 
@@ -36,7 +40,6 @@
 .background {
   position: absolute;
   height: 100vh;
-  /* width: 100%; */
   object-fit: cover;
   z-index: -1;
 }
@@ -44,12 +47,10 @@
 h1 {
   position: absolute;
   top: 5rem;
-  /* left: 50%; */
   font-size: 10rem;
   letter-spacing: 4px;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  /* transform: translateX(-50%); */
 }
 
 section {
@@ -73,7 +74,7 @@ section {
   position: relative;
   width: 100%;
 
-  /* image will not move on scroll :- */
+  /*To fix img:- image will not move on scroll :- */
   background-attachment: fixed;
 
   height: 500px;
